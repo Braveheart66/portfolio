@@ -281,6 +281,18 @@ section h2::after {
   font-size: 0.95rem;
 }
 
+.project-card ul {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.project-card li {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
 /* ================= CONTACT ================= */
 
 #contact a {
