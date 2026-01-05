@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Shivam Singh | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,113 +14,134 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<script src="script.js"></script>
-
 <body>
-<div class="bg-animation"></div>
-<nav>
-  <h2>Shivam Singh</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
 
-<section class="hero">
-  <div class="hero-text" data-aos="fade-right">
-    <h1>Hi, I'm <span>Shivam Singh</span></h1>
+  <!-- Animated Background -->
+  <div class="bg-animation"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Shivam Singh</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Hi, I'm <span>Shivam Singh</span></h1>
+      <p>
+        Data Science Enthusiast | Python | Machine Learning | EDA | Analytics | Aspiring Data Scientist
+      </p>
+      <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+
+    <div class="hero-img" data-aos="fade-left">
+      <img src="assets/profile.png" alt="Shivam Singh profile photo">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
     <p>
-      Data Science Enthusiast | Python | Machine Learning | EDA | Analytics | Aspiring Data Scientist
+      I am an aspiring Data Scientist with hands-on experience in machine learning, cloud-based AI concepts,
+      and end-to-end data science projects.
     </p>
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
-  </div>
+    <p>
+      I built a machine learning application for employee burnout detection using Random Forest, covering
+      data preprocessing, EDA, feature engineering, and model evaluation using Python and scikit-learn.
+    </p>
+    <p>
+      I have completed industry-recognized programs including AWS Machine Learning Foundations, AWS Agentic AI,
+      Oracle Generative AI Professional, and Oracle AI Foundations.
+    </p>
+    <p>
+      I am seeking Data Science internship opportunities where I can apply my skills to real-world datasets
+      and contribute to data-driven decision-making.
+    </p>
+  </section>
 
-  <div class="hero-img" data-aos="fade-left">
-    <img src="assets/profile.jpg.png" alt="Shivam Singh Profile Photo">
-  </div>
-</section>
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-left">
+    <h2>Skills</h2>
+    <p class="skills-desc">
+      Machine Learning · Data Analysis · Cloud & AI · Visualization
+    </p>
 
-<section id="about" data-aos="fade-right">
-  <h2>About Me</h2>
-  <p>I am an aspiring Data Scientist with hands-on experience in machine learning, cloud-based AI concepts, 
-and end-to-end data science projects.
+    <div class="skills">
+      <span>Machine Learning</span>
+      <span>Data Science</span>
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>scikit-learn</span>
+      <span>Matplotlib</span>
+      <span>Seaborn</span>
+      <span>AWS</span>
+      <span>Oracle Cloud</span>
+      <span>PyTorch</span>
+      <span>TensorFlow</span>
+    </div>
+  </section>
 
-I have built a machine learning application for employee burnout detection using Random Forest, 
-covering data preprocessing, EDA, feature engineering, and model evaluation using Python and scikit-learn.
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
 
-I have completed industry-recognized programs including AWS Machine Learning Foundations, AWS Agentic AI, 
-Oracle Generative AI Professional, and Oracle AI Foundations, strengthening my understanding of applied AI systems.
+    <div class="project-card">
+      <h3>Employee Burnout Detection System</h3>
+      <p><strong>Machine Learning · Random Forest</strong></p>
+      <p>
+        Developed an end-to-end machine learning application to predict employee burnout
+        using workplace indicators and behavioral data.
+      </p>
+      <ul>
+        <li>Performed data cleaning, preprocessing, and EDA</li>
+        <li>Built and evaluated a Random Forest classification model</li>
+        <li>Visualized insights using Matplotlib and Seaborn</li>
+      </ul>
+      <p><strong>Tech:</strong> Python, Pandas, NumPy, scikit-learn</p>
+    </div>
 
-I am seeking Data Science internship opportunities where I can apply my skills to real-world datasets 
-and contribute to data-driven decision-making.
-</p>
-</section>
+    <div class="project-card">
+      <h3>AI & Cloud Foundations Projects</h3>
+      <p><strong>AWS · Oracle · Generative AI</strong></p>
+      <p>
+        Hands-on projects completed during AWS and Oracle AI certification programs
+        focusing on machine learning and generative AI concepts.
+      </p>
+    </div>
 
-<section id="skills" data-aos="fade-left">
-  <h2>Skills</h2>
-  <p class="skills-desc">
-  Machine Learning · Data Analysis · Cloud & AI · Visualization</p>
+    <div class="project-card">
+      <h3>Data Analysis & Visualization Projects</h3>
+      <p><strong>EDA · Data Insights</strong></p>
+      <p>
+        Conducted exploratory data analysis on multiple datasets to extract trends
+        and actionable insights.
+      </p>
+    </div>
+  </section>
 
-  <div class="skills">
-    <span>Machine Learning</span>
-    <span>Data Science</span>
-    <span>Python</span>
-    <span>Pandas</span>
-    <span>NumPy</span>
-    <span>scikit-learn</span>
-    <span>Matplotlib</span>
-    <span>Seaborn</span>
-    <span>AWS</span>
-    <span>Oracle Cloud</span>
-    <span>PyTorch</span>
-    <span>Tensorflow</span>
-  </div>
-</section>
+  <!-- Contact -->
+  <section id="contact" data-aos="zoom-in">
+    <h2>Contact</h2>
+    <p>Email: shivamsinghraghuvanshi1234@email.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shivam-singh-93ab0b2a7/" target="_blank">LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/Braveheart66" target="_blank">GitHub Profile</a></p>
+    <p>LeetCode: <a href="https://leetcode.com/u/ShivamSingh_44/" target="_blank">LeetCode Profile</a></p>
+  </section>
 
-<section id="projects" data-aos="fade-up">
-  <h2>Projects</h2>
-  <div class="project-card"><h3>Employee Burnout Detection System</h3>
-  <p><b>Machine Learning | Random Forest</b></p>
-  <p><b>
-    Developed an end-to-end machine learning application to predict employee burnout
-    using workplace indicators and behavioral data.
-  </b></p>
-  <ul>
-    <li>Performed data cleaning, preprocessing, and EDA</li>
-    <li>Built and evaluated a Random Forest classification model</li>
-    <li>Visualized insights using Matplotlib and Seaborn</li>
-  </ul>
-  <p><b>Tech:</b> Python, Pandas, NumPy, scikit-learn</p></div>
-  <div class="project-card"><h3>AI & Cloud Foundations Projects</h3>
-  <p><b>AWS | Oracle | Generative AI</b></p>
-  <p><b>
-    Hands-on projects completed during AWS and Oracle AI certification programs
-    focusing on machine learning and generative AI concepts.
-  </b></p></div>
-  <div class="project-card"><h3>Data Analysis & Visualization Projects</h3>
-  <p><b>EDA | Data Insights</b></p>
-  <p><b>
-    Conducted exploratory data analysis on multiple datasets to extract trends
-    and actionable insights.
-  </b></p></div>
-</section>
-
-<section id="contact" data-aos="zoom-in">
-  <h2>Contact</h2>
-  <p>Email: shivamsinghraghuvanshi1234@email.com</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/shivam-singh-93ab0b2a7/" target="_blank">LinkedIn Profile</a></p>
-  <p>Github: <a href="https://github.com/Braveheart66" target="_blank">GitHub Profile</a></p>
-  <p>Leetcode: <a href="https://leetcode.com/u/ShivamSingh_44/" target="_blank">Leetcode Profile</a></p>
-</section>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
 
 </body>
 </html>
-
-
