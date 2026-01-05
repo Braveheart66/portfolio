@@ -69,6 +69,24 @@ body {
   }
 }
 
+.bg-animation::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.05;
+  animation: grainMove 6s steps(10) infinite;
+  pointer-events: none;
+}
+
+@keyframes grainMove {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(-5%, 5%); }
+  50% { transform: translate(5%, -5%); }
+  75% { transform: translate(-5%, -5%); }
+  100% { transform: translate(0,0); }
+}
+
 /* ================= PARTICLES ================= */
 
 .particles {
@@ -148,6 +166,33 @@ nav a {
 nav a:hover {
   opacity: 1;
 }
+
+/* ================= ABOUT SECTION ================= */
+
+.about {
+  max-width: 800px;
+}
+
+.about-block {
+  margin-top: 48px;
+}
+
+.about-block h3 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.about-block p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.about-block strong {
+  color: var(--text);
+}
+
 
 /* ================= HERO ================= */
 
